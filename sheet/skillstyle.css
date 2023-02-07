@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+.blk{
+    background-color: aqua;
+}
+.jp_head{
+    float: left;
+}
+h1{
+    font-size: 36px;
+}
+.btns{
+    float: right;
+}
+.btns a{
+    text-decoration: none;
+    background-color: lightyellow;
+    border: 1.5px solid;
+    border-color: black;
+    padding: 4px;
+}
+nav{
+    clear: both;
+}
+nav>ul{
+    margin-left: 0;
+    padding: 0;
+}
+nav>ul>li{
+    list-style: none;
+}
+.menu{
+    clear: both;
+    background-color: blue;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.links li{
+    display: inline;
+}
+
+.links li a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    padding: 1em;
+}
+/* 目次 */
+details{
+    clear: both;
+    margin: 12px;
+}
+ul.toc{
+    background-color: lightgray;
+    width: 100px;
+    height: auto;
+}
+
+/* ここから大枠 */
+div.years{
+    background-color: beige;
+}
+/* 大枠終了 */
+.comment{
+    clear: both;
+}
+footer{
+    margin-top: 50px;
+}
