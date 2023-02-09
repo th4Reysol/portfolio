@@ -4,9 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+    <link rel="stylesheet" href="./sheet/contactstyle.css">
+    <title>Contact</title>
 </head>
 <body>
-    
+    <div class="blk">
+        <div class="jp_head">
+            <h1 class="langCng" lang="ja">リモートボックス</h1>
+            <h1 class="langCng" lang="en">Remote Box</h1>
+        </div>
+        <div class="btns" id="btns">
+            <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')" checked>
+            <label for="sJa">
+            <span class="langCng" lang="ja">日本語</span>
+            <span class="langCng" lang="en">Japanese</span>
+            </label>
+            <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')">
+            <label for="sEn">
+            <span class="langCng" lang="ja">英語</span>
+            <span class="langCng" lang="en">English</span>
+            </label>
+        </div>
+    </div>
+    <nav class="bread">
+        <ul>
+            <li class="langCng" lang="ja">
+                <a href="./index.html">ホーム</a><span>></span><a href="./works.html">お問い合わせ</a>
+            </li>
+            <li class="langCng" lang="en">
+                <a href="./index.html">HOME</a><span>></span><a href="./works.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <div class="links">
+            <li class="langCng" lang="ja">
+                <a href="./index.html">
+                ホーム</a>
+            </li>
+            <li class="langCng" lang="ja">
+                <a href="./works.html">
+                作品</a>
+            </li>
+            <li class="langCng" lang="ja">
+                <a href="./skills.html">
+                経歴・スキル</a>
+            </li>
+            <li class="langCng" lang="ja">
+                <a href="./contact.html">
+                お問い合わせ</a>
+            </li>
+            <li class="langCng" lang="en">
+                <a href="./index.html">
+                HOME</a>
+            </li>
+            <li class="langCng" lang="en">
+                <a href="./works.html">
+                Works</a>
+            </li>
+            <li class="langCng" lang="en">
+                <a href="./skills.html">
+                Carrers</a>
+            </li>
+            <li class="langCng" lang="en">
+                <a href="./contact.html">
+                Contact</a>
+            </li>
+        </div>
+    </div>
+    <div class="langCng thanks" lang="ja">
+        <h3>ありがとうございました！</h3>
+        <p>本サイトでは私の経歴・スキルについて紹介してまいりました。<br>
+           少しでも私に興味を持っていただけたら幸いです。<br>
+           <a href="./works.html">作品</a>、<a href="./skills.html">経歴・スキル</a>のページでで申し上げましたが、これは私の一部分に過ぎません。
+           「更に話が聞きたい」と思った方は以下のフォーム、またはメールにて受け付けております。
+           改めて、本サイトにお越しいただきありがとうございました。
+        </p>
+    </div>
+    <div class="langCng thanks" lang="en">
+        <h3>Thank you so much!</h3>
+        <p>This website shows my works and carrers mainly.<br>
+           I am extremely grateful if you get somehow interested.<br>
+           As mentioned in <a href="./works.html">Works</a> and <a href="./skills.html">Carrers</a>
+           I still have more works and details on my carrers, which are worth a lot of talks with you. <br>
+           So, if you think that you get information, please contact me by form below or e-mail to @gmail.com.
+           I would say again that I thank you so much for your visit.
+        </p>
+    </div>
+    <div class="langCng" lang="ja">
+        <div class="inquiry">
+            <form action="">
+                <h4>問い合わせフォーム</h4>
+                <li>
+                    <div class="item">
+                        <span><label for="rendou">名前:</label></span> <input id="rendou" type="text" name="yourname">
+                    </div>
+                </li>
+                <li>    
+                    <div class="item">
+                        <span><label for="rendou">タイトル:</label></span> <input id="rendou" type="text" name="title">
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <span><label for="rendou">メールアドレス:</label></span> <input id="rendou" type="text" name="title">
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <span><label for="comment">コメント</label></span> <br>
+                        <textarea id="comment" name="comment" placeholder="Any question is welcome"></textarea>
+                    </div>
+                </li>
+            </form>
+        </div>
+    </div>
+    <div class="langCng" lang="en">
+        <div class="inquiry">
+            <form action="">
+                <h4>Inquiry Form</h4>
+                <li>
+                    <div class="item">
+                        <span><label for="rendou">Name:</label></span> <input id="rendou" type="text" name="yourname">
+                    </div>
+                </li>
+                <li>    
+                    <div class="item">
+                        <span><label for="rendou">Title:</label></span> <input id="rendou" type="text" name="title">
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <span><label for="rendou">Mail Address:</label></span> <input id="rendou" type="text" name="title">
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <span><label for="comment">Comment</label></span> <textarea id="comment" name="comment" placeholder="Any question is welcome"></textarea>
+                    </div>
+                </li>
+            </form>
+        </div>
+    </div>
+    <script src="lang.js"></script>
 </body>
 </html>

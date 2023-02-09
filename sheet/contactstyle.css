@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+}
+.blk{
+    background-color: aqua;
+}
+.jp_head{
+    float: left;
+}
+h1{
+    font-size: 36px;
+}
+.btns{
+    float: right;
+}
+nav{
+    clear: both;
+}
+nav>ul{
+    padding-left: 0;
+}
+nav>ul>li{
+    list-style: none;
+}
+.menu{
+    background-color: blue;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.links li{
+    display: inline;
+}
+
+.links li a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    padding: 1em;
+}
+
+details{
+    clear: both;
+    margin: 12px;
+}
+ul.toc{
+    background-color: lightgray;
+    width: 100px;
+    height: auto;
+}
+form>li{
+    list-style: none;
+}
+
+/* === ラジオボタンは非表示 ================== */
+#btns input[type="radio"]{
+    display    : none;
+}
+   
+   /* === 各ラジオボタンのラベルをボタンに変更 == */
+#btns label{
+    display    : inline-block;
+    border     : 1px solid #ccc;
+    box-shadow : 2px 2px #999;
+    padding    : 2px 6px;
+}
+   
+   /* === 選択されている言語のラベル色を変更 ==== */
+#btns input[type="radio"]:checked + label {
+    background :orange;
+    font-weight: bold;
+}
+
+
+
+
