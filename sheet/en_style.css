@@ -60,9 +60,15 @@ ul.toc{
     background-color:lightgreen;
     margin-left: auto;
 }
-.comment{
+.clm_3{
     clear: both;
+    background-color: honeydew;
+    border: 0.5px solid gray;
 }
+
 footer{
     margin-top: 50px;
+}
+body>*:lang(en){
+    font-family: "Times New Roman", Times, serif;
 }

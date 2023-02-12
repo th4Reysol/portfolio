@@ -53,17 +53,33 @@ details{
 }
 ul.toc{
     background-color: lightgray;
-    width: 100px;
+    width: 200px;
     height: auto;
+    list-style: none;
+    padding: 0;
 }
 
 /* ここから大枠 */
 div.years{
     background-color: beige;
+    margin: 0,10;
+}
+
+h3, p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h3{
+    background: linear-gradient(transparent 60%, orange);
+    width: auto;
+}
+h4{
+    margin-bottom: 0;
 }
 /* 大枠終了 */
 .comment{
     clear: both;
+    margin-top: 15px;
 }
 footer{
     margin-top: 50px;

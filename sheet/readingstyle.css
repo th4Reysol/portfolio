@@ -2,35 +2,11 @@ body{
     margin: 0;
 }
 
-.blk{
-    background-color: aqua;
-}
-.jp_head{
-    float: left;
-}
 h1{
     font-size: 36px;
 }
-.btns{
-    float: right;
-}
-nav{
-    clear: both;
-}
-nav>ul{
-    padding-left: 0;
-}
-nav>ul>li{
-    list-style: none;
-}
-.menu{
-    background-color: blue;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-}
-.links li{
-    display: inline;
-}
+
+
 
 .links li a{
     text-decoration: none;
@@ -40,30 +16,22 @@ nav>ul>li{
 }
 
 details{
-    clear: both;
     margin: 12px;
 }
 /* 目次 */
 ul.toc{
     background-color: lightblue;
-    width: 100px;
+    width: 280px;
     height: auto;
     list-style: none;
     padding-left: 0;
 }
 /* Columns of Contents: 2 to 2 */
 /* 大枠部分 */
-.container{
-    display: flex;
-}
+
 .main{
     background-color: lightgoldenrodyellow;
-    flex: 3;
 }
-.sub{
-    flex: 1;
-}
-
 
 /* Main内容 */
 
@@ -71,22 +39,12 @@ h3{
     margin-top: 0;
     margin-bottom: 0;
 }
-/* Sub内容 */
-.clm_2{
-    background-color: lightgreen;
-    
-}
-.clm_2>div{
-    border-color: darkgreen;
-    padding-left: 20px;
-    
+span.underline{
+    background: linear-gradient(transparent 60% lightblue);
 }
 
 /* ページ下部分 */
 
-.comment{
-    clear: both;
-}
 p.underline{
     width: 900px;
     background: linear-gradient(transparent 70%, red);

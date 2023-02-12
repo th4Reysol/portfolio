@@ -1,6 +1,7 @@
 body{
     margin: 0;
 }
+
 .blk{
     background-color: aqua;
 }
@@ -8,7 +9,7 @@ body{
     float: left;
 }
 h1{
-    font-size: 36px;
+    font-size: 40px;
 }
 .btns{
     float: right;
@@ -44,7 +45,10 @@ ul.toc{
     background-color: lightgray;
     width: 100px;
     height: auto;
+    list-style: none;
+    padding: 0;
 }
+
 .clms{
     display: flex;
     height: auto;
@@ -59,10 +63,16 @@ ul.toc{
     flex:1;
     background-color:lightgreen;
     margin-left: auto;
+    border: 0.5px solid gray;
 }
-.comment{
+.clm_3{
     clear: both;
+    background-color: honeydew;
+    border: 0.5px solid gray;
 }
+
 footer{
     margin-top: 50px;
 }
+
+

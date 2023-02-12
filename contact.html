@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -93,59 +93,82 @@
     </div>
     <div class="langCng" lang="ja">
         <div class="inquiry">
-            <form action="">
-                <h4>問い合わせフォーム</h4>
-                <li>
-                    <div class="item">
-                        <span><label for="rendou">名前:</label></span> <input id="rendou" type="text" name="yourname">
-                    </div>
-                </li>
-                <li>    
-                    <div class="item">
-                        <span><label for="rendou">タイトル:</label></span> <input id="rendou" type="text" name="title">
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <span><label for="rendou">メールアドレス:</label></span> <input id="rendou" type="text" name="title">
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <span><label for="comment">コメント</label></span> <br>
-                        <textarea id="comment" name="comment" placeholder="Any question is welcome"></textarea>
-                    </div>
-                </li>
+            <form class="contact" action="index.html" method="post">
+                <h3>お問い合わせ</h3>
+                <dl>
+                    <dt>お名前</dt>
+                    <dd><input type="text" name="name" class="name"></dd>
+                    <dt>メールアドレス</dt>
+                    <dd><input type="email" name="email" class="email"></dd>
+                    <dt>お電話番号</dt>
+                    <dd><input type="tel" name="tel" class="tel"></dd>
+                    <dt>問い合わせ内容</dt>
+                    <dd>
+                    <select class="type" name="type">
+                        <option value="ポートフォリオ問い合わせ">ポートフォリオ問い合わせ</option>
+                        <option value="案件のご依頼">案件のご依頼</option>
+                        <option value="その他">その他</option>
+                    </select>
+                    </dd>
+                    <dt>ご希望のご連絡方法</dt>
+                    <dd>
+                    <input type="radio" name="contact" value="メール" class="radio">メール
+                    <input type="radio" name="contact" value="電話" class="radio">電話
+                    </dd>
+                    <dt>自由記入欄</dt>
+                    <dd><textarea name="message" class="message"></textarea></dd>
+                </dl>
+                <button type="submit" class="btn">送信</button>
             </form>
         </div>
     </div>
     <div class="langCng" lang="en">
         <div class="inquiry">
-            <form action="">
-                <h4>Inquiry Form</h4>
-                <li>
-                    <div class="item">
-                        <span><label for="rendou">Name:</label></span> <input id="rendou" type="text" name="yourname">
-                    </div>
-                </li>
-                <li>    
-                    <div class="item">
-                        <span><label for="rendou">Title:</label></span> <input id="rendou" type="text" name="title">
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <span><label for="rendou">Mail Address:</label></span> <input id="rendou" type="text" name="title">
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <span><label for="comment">Comment</label></span> <textarea id="comment" name="comment" placeholder="Any question is welcome"></textarea>
-                    </div>
-                </li>
-            </form>
+            <form class="contact" action="index.html" method="post">
+                <h3 class="Title">Inquiry Form</h3>
+                    <dl>
+                        <dt>Name</dt>
+                        <dd><input type="text" name="name" class="name"></dd>
+                        <dt>E-Mail Address</dt>
+                        <dd><input type="email" name="email" class="email"></dd>
+                        <dt>Phone Number</dt>
+                        <dd><input type="tel" name="tel" class="tel"></dd>
+                        <dt>Inquiry Type</dt>
+                        <dd>
+                            <select class="type" name="type">
+                                <option value="Request for Portfolios">Request for Portfolios</option>
+                                <option value="Introduce a project">Introduce a project</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </dd>
+                        <dt>Mail or Phone</dt>
+                        <dd>
+                            <input type="radio" name="contact" value="メール" class="radio">E-mail
+                            <input type="radio" name="contact" value="電話" class="radio">Phone
+                        </dd>
+                        <dt>Give me any comments</dt>
+                        <dd><textarea name="message" class="message"></textarea></dd>
+                    </dl>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
         </div>
     </div>
+    <footer>
+        <div class="langCng" lang="ja">
+            <a class="foot" href="./index.html">ホーム
+            </a>
+            <span>></span>
+            <a class="foot" href="./works.html">お問い合わせ
+            </a>
+        </div>
+        <div class="langCng" lang="en">
+            <a class="foot" href="./index.html">HOME
+            </a>
+            <span>></span>
+            <a class="foot" href="./works.html">Contact
+            </a>
+        </div>
+    </footer>
     <script src="lang.js"></script>
 </body>
 </html>
